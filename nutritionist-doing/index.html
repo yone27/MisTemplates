@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html class="no-js"
+      lang="es"
+      >
+    <head>
+        <link rel="stylesheet"
+    href="./fontawesome/css/all.css" />
+<link rel="stylesheet"
+    href="./css/bootstrap.min.css" />
+<link rel="stylesheet"
+    href="./css/main.core.min.css" />
+<link rel="stylesheet"
+    href="./css/preview.min.css" />
+<link rel="stylesheet" href="./css/custom.css"/>
+    </head>
+    <body>
+        
+        <header class="menu-b"
+                data-spy="affix"
+                data-offset-top="0">
+            <section class="top-menu">
+                <article class="container fluid-md-less">
+                    <!--info-->
+                    <address>
+                        <div class="address">
+                            <i class="fas fa-phone"></i>
+                            <span>
+                                Phone: +(00) 8888 88 88 88
+                            </span>
+                        </div>
+                        <div class="address">
+                            <i class="far fa-envelope"></i>
+                            <span>
+                                Email: info@nutritionist.es
+                            </span>
+                        </div>
+                    </address>
+                    <!--/info-->
+                    <!--social-->
+                    <ul class="social pull-right">
+                        <li>
+                            <a aria-label="Share on social network"
+                               title="Share on social network"
+                               href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Share on social network"
+                               title="Share on social network"
+                               href="#">
+                                <i class="fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Share on social network"
+                               title="Share on social network"
+                               href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--/social-->
+                </article>
+            </section>
+            <nav class="navbar"
+                 role="navigation">
+                <div class="container fluid-md-less">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle collapsed"
+                                title="Mobile menu"
+                                aria-label="Mobile menu"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#menu"
+                                aria-expanded="false">
+                            <span class="sr-only">
+                                Mobile menu
+                            </span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--logo-->
+                        <a class="navbar-brand"
+                           title="Go to home My Nutritionist"
+                           aria-label="Go to home My Nutritionist"
+                           href="./index.html">
+                            <figure>
+                                <picture>
+                                    <source srcset="./images/logo.webp"
+                                            type="image/webp">
+                                    <img src="./images/logo.png"
+                                         title="My Nutritionist Logo"
+                                         alt="My Nutritionist Logo">
+                                </picture>
+                            </figure>
+                        </a>
+                        <!--/logo-->
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse"
+                         id="menu"
+                         aria-expanded="false">
+                        <a title="Go to home My Nutritionist"
+                           aria-label="Go to home My Nutritionist"
+                           href="./index.html">
+                            <figure>
+                                <picture>
+                                    <source srcset="./images/logo-white.webp"
+                                            type="image/webp">
+                                    <img class="img-responsive collapsed-brand"
+                                         src="./images/logo-white.png"
+                                         title="My Nutritionist white logo"
+                                         alt="My Nutritionist white logo">
+                                </picture>
+                            </figure>
+                        </a>
+                        <!--Menu-->
+                        <?= MenuLoaderPreview::widget([
+                            'ulClass' => 'nav navbar-nav navbar-right',
+                            'theme'   => 'nutritionist',
+                            'menu'    => [
+                                ['label' => Yii::t('nutritionist', 'Home'), 'view' => '/site/index'],
+                                ['label' => Yii::t('nutritionist', 'About us'), 'view' => '/site/about'],
+                                ['label' => Yii::t('nutritionist', 'Products'), 'view' => '/wProducts/index'],
+                                ['label' => Yii::t('nutritionist', 'News'), 'view' => '/wNews/index'],
+                                ['label' => Yii::t('nutritionist', 'Contact us'), 'view' => '/site/contacts'],
+                            ],
+                        ]); 
+                        <!--/Menu-->
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="wrapper">
+<!--slider-->
+<section class="slider">
+	<aside id="wSliderWidget"
+	       class="carousel carousel-a slide carousel-fade full-screen"
+	       data-ride="carousel"
+	       data-interval="4000">
+		<div class="carousel-inner">
+			<article class="item active overlay">
+				<div class="content right container">
+					<header class="animated slideInLeft mb20">
+						<h2 class="big text-uppercase">
+							<small>Lorem ipsum dolor sit amet, consectetur.</small>
+							My Nutritionist
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis distinctio
+							<br>
+							earum eius, eos et excepturi itaque laboriosam nostrum officia placeat quae repudiandae sed
+							<br>
+							sequi soluta tempora tenetur velit voluptas?
+						</p>
+					</header>
+					<footer class="animated slideInUp">
+						<a class="btn btn-primary btn-lg mb10"
+						   title="View more"
+						   aria-label="View more"
+						   href="#">
+							View more
+						</a>
+					</footer>
+				</div>
+				<figure>
+					<picture>
+						<source srcset="./images/demo-slide2.webp"
+						        type="image/webp">
+						<img class="preload"
+						     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+						     data-original="./images/demo-slide2.jpg"
+						     title="Slider Demo My Nutritionist"
+						     alt="Slider Demo My Nutritionist">
+					</picture>
+				</figure>
+			</article>
+		</div>
+		<!--<div class="control-box">
+			<a class="left carousel-control"
+			   title="<? /*= Yii::t('nutritionist', 'Prev') */ "
+			   aria-label="<? /*= Yii::t('nutritionist', 'Prev') */ "
+			   data-slide="prev"
+			   role="button"
+			   href="#wSliderWidget">
+				<i class="control-icon fa fa-chevron-left"></i>
+			</a>
+			<a class="right carousel-control"
+			   aria-label="<? /*= Yii::t('nutritionist', 'Next') */ "
+			   title="<? /*= Yii::t('nutritionist', 'Next') */ "
+			   data-slide="next"
+			   role="button"
+			   href="#wSliderWidget">
+				<i class="control-icon fa fa-chevron-right"></i>
+			</a>
+		</div>-->
+	</aside>
+</section>
+<!--/slider-->
+<!--about-->
+<div class="section about">
+	<div class="container fluid-md-less">
+		<section class="row feature feature-a lg center-sm center-xs">
+			<article class="col-md-4">
+				<aside class="icon rounded">
+					<i class="fas fa-utensils fa-5x"></i>
+				</aside>
+				<header class="content icon-boxes">
+					<h2 class="text-uppercase h4">
+						Food & Nutrition
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. assumenda esse, magni nihil rerum
+						voluptatum.
+					</p>
+				</header>
+			</article>
+			<article class="col-md-4">
+				<aside class="icon rounded">
+					<i class="fas fa-thumbs-up fa-5x"></i>
+				</aside>
+				<header class="content icon-boxes">
+					<h2 class="text-uppercase h4">
+						Guaranteed Results
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. assumenda esse, magni nihil rerum
+						voluptatum.
+					</p>
+				</header>
+			</article>
+			<article class="col-md-4">
+				<aside class="icon rounded">
+					<i class="fas fa-heartbeat fa-5x"></i>
+				</aside>
+				<header class="content icon-boxes">
+					<h2 class="text-uppercase h4">
+						Healthy tips
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. assumenda esse, magni nihil rerum
+						voluptatum.
+					</p>
+				</header>
+			</article>
+		</section>
+		<section class="row d-table mt100">
+			<article class="col-md-7 d-table-cell pr80-lg pr80-md">
+				<header>
+					<h1 class="big ll text-uppercase">
+						<small>Having Trouble Finding a Nutritous Balance?</small><span>My nutritionist</span>
+					</h1>
+					<p class="text-justify">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aperiam aut cumque
+						cupiditate, eius eligendi est et eveniet fuga fugit labore laborum magnam magni maxime modi
+						natus nemo obcaecati odio quibusdam quis sapiente vel, veritatis vero vitae, voluptas
+						voluptatum.
+					</p>
+					<ul class="list list-unstyled">
+						<li class="list-item">
+							<i class="fa fa-check list-icon"></i>
+							Lorem ipsum dolor sit.
+						</li>
+						<li class="list-item">
+							<i class="fa fa-check list-icon"></i>
+							Lorem ipsum dolor sit.
+						</li>
+						<li class="list-item">
+							<i class="fa fa-check list-icon"></i>
+							Lorem ipsum dolor sit.
+						</li>
+						<li class="list-item">
+							<i class="fa fa-check list-icon"></i>
+							Lorem ipsum dolor sit.
+						</li>
+					</ul>
+				</header>
+				<footer>
+					<a class="btn btn-primary btn-lg"
+					   title="Get to know us better"
+					   aria-label="Get to know us better"
+					   href="./about.html">
+						Get to know us better
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</footer>
+			</article>
+			<aside class="col-sm-6 col-md-5 col-sm-offset-3 col-md-offset-0 d-table-cell">
+				<div class="img img-b light">
+					<div class="image">
+						<div class="aspect-portrait">
+							<figure>
+								<picture>
+									<source srcset="./images/about.webp"
+									        type="image/webp">
+									<img 
+									     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+									     data-original="./images/about.jpg"
+									     title="image title"
+									     alt="image description">
+								</picture>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</section>
+	</div>
+</div>
+<!--/about-->
+<!--spacer products-->
+<div data-background-url="./images/parallax2.png"
+     class="parallax-f">
+	<div class="container fluid-md-less">
+		<section class="row">
+			<article class="col-md-12">
+				<header class="mb30">
+					<h2 class="lc big text-uppercase">
+						<small>
+							Finding a balance can be hard, but eating healthy
+						</small>
+						doesn’t have to be.
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloribus ducimus eos
+						<br>
+						error magni nam necessitatibus placeat quaerat tenetur vel. A accusamus adipisci aut
+						<br>
+						excepturi fugiat itaque maxime, neque repudiandae!
+					</p>
+				</header>
+				<footer>
+					<a class="btn btn-primary btn-lg btn-icon-forward"
+					   title="More info"
+					   aria-label="More info"
+					   href="./about.html">
+						More info
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</footer>
+			</article>
+		</section>
+	</div>
+</div>
+<!--/spacer products-->
+<!--products-->
+<div class="section">
+	<div class="container fluid-md-less">
+		<section class="row">
+			<header class="col-sm-12 col-md-12 col-lg-12 mb20">
+				<h2 class="text-uppercase h1 lc">
+					Our <strong>products</strong>
+				</h2>
+			</header>
+			<article class="col-sm-4 col-md-4 col-lg-4">
+				<div class="card card-products card-products-b">
+					<aside class="aspect-rectangular hover full center middle hover-b">
+						<div class="hover-content">
+							<div class="overlay semi-transparent"></div>
+							<div class="hover-body">
+								<a class="btn btn-primary btn-lg btn-rounded"
+								   title="Add to cart"
+								   aria-label="Add to cart">
+									<i class="fa fa-plus-circle"></i>
+								</a>
+							</div>
+						</div>
+						<a title="Vegetarian food guide"
+						   aria-label="image title"
+						   href="./viewProducts.html">
+							<figure>
+								<picture>
+									<source srcset="./images/demo-products1.webp"
+									        type="image/webp">
+									<img 
+									     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+									     data-original="./images/demo-products1.jpg"
+									     title="image title"
+									     alt="image description">
+								</picture>
+							</figure>
+						</a>
+					</aside>
+					<header class="content product-card">
+						<h2>
+							<a title="Vegetarian food guide"
+							   aria-label="Vegetarian food guide"
+							   href="./viewProducts.html">
+								Vegetarian food guide
+							</a>
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores explicabo illo
+							laboriosam nemo quisquam sequi, voluptas. Cum deleniti enim facilis, molestias
+						</p>
+						<p class="price">
+							10$
+						</p>
+					</header>
+					<footer class="footer">
+						<a class="btn btn-primary btn-lg"
+						   title="View more"
+						   aria-label="View more"
+						   href="./viewProducts.html">
+							View more
+						</a>
+					</footer>
+				</div>
+			</article>
+			<article class="col-sm-4 col-md-4 col-lg-4">
+				<div class="card card-products card-products-b">
+					<aside class="aspect-rectangular hover full center middle hover-b">
+						<div class="hover-content">
+							<div class="overlay semi-transparent"></div>
+							<div class="hover-body">
+								<a class="btn btn-primary btn-lg btn-rounded"
+								   title="Add to cart"
+								   aria-label="Add to cart">
+									<i class="fa fa-plus-circle"></i>
+								</a>
+							</div>
+						</div>
+						<a title="Cooking instructions"
+						   aria-label="image title"
+						   href="./viewProducts.html">
+							<figure>
+								<picture>
+									<source srcset="./images/demo-products2.webp"
+									        type="image/webp">
+									<img 
+									     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+									     data-original="./images/demo-products2.jpg"
+									     title="image title"
+									     alt="image description">
+								</picture>
+							</figure>
+						</a>
+					</aside>
+					<header class="content product-card">
+						<h2>
+							<a title="Cooking instructions"
+							   aria-label="Cooking instructions"
+							   href="./viewProducts.html">
+								Cooking instructions
+							</a>
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores explicabo illo
+							laboriosam nemo quisquam sequi, voluptas. Cum deleniti enim facilis, molestias
+						</p>
+						<p class="price">
+							55$
+						</p>
+					</header>
+					<footer class="footer">
+						<a class="btn btn-primary btn-lg"
+						   title="View more"
+						   aria-label="View more"
+						   href="./viewProducts.html">
+							View more
+						</a>
+					</footer>
+				</div>
+			</article>
+			<article class="col-sm-4 col-md-4 col-lg-4">
+				<div class="card card-products card-products-b">
+					<aside class="aspect-rectangular hover full center middle hover-b">
+						<div class="hover-content">
+							<div class="overlay semi-transparent"></div>
+							<div class="hover-body">
+								<a class="btn btn-primary btn-lg btn-rounded"
+								   title="Add to cart"
+								   aria-label="Add to cart">
+									<i class="fa fa-plus-circle"></i>
+								</a>
+							</div>
+						</div>
+						<a title="Vegetarian coaching"
+						   aria-label="image title"
+						   href="./viewProducts.html">
+							<figure>
+								<picture>
+									<source srcset="./images/demo-products3.webp"
+									        type="image/webp">
+									<img 
+									     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+									     data-original="./images/demo-products3.jpg"
+									     title="image title"
+									     alt="image description">
+								</picture>
+							</figure>
+						</a>
+					</aside>
+					<header class="content product-card">
+						<h2>
+							<a title="Vegetarian coaching"
+							   aria-label="Vegetarian coaching"
+							   href="./viewProducts.html">
+								Vegetarian coaching
+							</a>
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores explicabo illo
+							laboriosam nemo quisquam sequi, voluptas. Cum deleniti enim facilis, molestias
+						</p>
+						<p class="price">
+							25.3$
+						</p>
+					</header>
+					<footer class="footer">
+						<a class="btn btn-primary btn-lg"
+						   title="View more"
+						   aria-label="View more"
+						   href="./viewProducts.html">
+							View more
+						</a>
+					</footer>
+				</div>
+			</article>
+			<aside class="col-sm-12 col-md-12 col-lg-12 mt20">
+				<a class="btn btn-primary-o btn-lg"
+				   title="More products!"
+				   aria-label="More products!"
+				   href="./indexProducts.html">
+					More products!
+				</a>
+			</aside>
+		</section>
+	</div>
+</div>
+<!--/products-->
+<!--spacer subscribe-->
+<div class="section spacer spacer-w"
+     data-background-url="./images/demo-slide2.jpg"
+     data-fixed="true">
+	<div class="overlay semi-transparent"></div>
+	<div class="content">
+		<div class="container fluid-md-less">
+			<section class="row">
+				<article class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6">
+					<aside class="mb30">
+						<i class="fas fa-envelope-open-text fa-5x text-color1"></i>
+					</aside>
+					<header>
+						<h2 class="big">
+							Stay <strong>Updated!</strong>
+						</h2>
+						<p class="h3">
+							Easy recipes cookings right to your inbox
+						</p>
+					</header>
+					<footer>
+						<div class="input-group input-group-lg">
+							<label hidden
+							       for="subscribe"></label>
+							<input type="email"
+							       class="form-control"
+							       placeholder="Subscribe our newsletter"
+							       id="subscribe">
+							<span class="input-group-btn">
+								<button class="btn btn-primary"
+								        type="submit">Subscribe</button>
+							</span>
+						</div>
+					</footer>
+				</article>
+			</section>
+		</div>
+	</div>
+</div>
+<!--/spacer subscribe-->
+<!--testimonials-->
+<div data-background-url="./images/parallax3.png"
+     class="parallax-f">
+	<section class="container fluid-md-less">
+		<header class="mb20">
+			<h2 class="big lc">
+				Feedback from <span>our customers</span>
+				<small>
+					Your opinion is what counts
+				</small>
+			</h2>
+		</header>
+		<aside class="slider">
+			<div id="testimonials"
+			     class="carousel slide testimonial-carousel carousel-fade full-width"
+			     data-ride="carousel"
+			     data-interval="4000">
+				<div class="carousel-inner">
+					<div class="item active">
+						<article class="card card-testimonial card-testimonial-a">
+							<header class="content">
+								<h2>
+									<strong>
+										Lorem ipsum dolor sit amet.
+									</strong>
+								</h2>
+								<p class="h3">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+									cupiditate
+									facere fuga illo, illum ipsam laborum minima praesentium quae ut.
+								</p>
+							</header>
+							<footer>
+								<p class="h4">
+									<strong>
+										Isabella Evans
+									</strong>
+									<small>
+										Caracas, Venezuela
+									</small>
+								</p>
+							</footer>
+						</article>
+					</div>
+					<div class="item">
+						<article class="card card-testimonial card-testimonial-a">
+							<header class="content">
+								<h2>
+									<strong>
+										Lorem ipsum dolor.
+									</strong>
+								</h2>
+								<p class="h3">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+									cupiditate
+									facere fuga illo, illum ipsam laborum minima praesentium quae ut.
+								</p>
+							</header>
+							<footer>
+								<p class="h4">
+									<strong>
+										Paul Wiliams
+									</strong>
+									<small>
+										Caracas, Venezuela
+									</small>
+								</p>
+							</footer>
+						</article>
+					</div>
+				</div>
+				<div class="control-box">
+					<a class="left carousel-control"
+					   title="Prev"
+					   aria-label="Prev"
+					   data-slide="prev"
+					   role="button"
+					   href="#testimonials">
+						<i class="control-icon fa fa-chevron-left"></i>
+					</a>
+					<a class="right carousel-control"
+					   aria-label="Next"
+					   title="Next"
+					   data-slide="next"
+					   role="button"
+					   href="#testimonials">
+						<i class="control-icon fa fa-chevron-right"></i>
+					</a>
+				</div>
+			</div>
+		</aside>
+	</section>
+</div>
+<!--/testimonials-->
+<!--news-->
+<div class="section">
+	<div class="container-fluid">
+		<section class="row">
+			<header class="col-sm-12 col-md-12 mb20">
+				<h2 class="text-uppercase h1 lc">
+					Our <strong>news</strong>
+				</h2>
+				<h3 class="h4">
+					Lorem ipsum dolor sit amet, consectetur Lorem ipsum.
+					<br>
+					ipsum laboriosam laborum nemo nostrum Lorem ipsum.
+					<br>
+					voluptatum. Dignissimos obcaecati
+				</h3>
+			</header>
+			<div class="col-sm-6 col-md-3">
+				<article class="card card-news card-news-c">
+					<aside class="aspect-rectangular hover hover-h full middle center">
+						<div class="hover-content">
+							<div class="overlay semi-transparent"></div>
+							<div class="hover-body">
+								<h3 class="h4-sm h4-xs mb0">
+									<a class="btn btn-color4-o"
+									   title="View more"
+									   aria-label="View more"
+									   href="./viewBlog.html">
+										<strong>
+											View more
+										</strong>
+									</a>
+								</h3>
+							</div>
+						</div>
+						<figure>
+							<picture>
+								<source srcset="./images/demo-news1.webp"
+								        type="image/webp">
+								<img 
+								     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+								     data-original="./images/demo-news1.jpg"
+								     title="Making a vegan meal for my boyfriend"
+								     alt="image description">
+							</picture>
+						</figure>
+						<nav class="tags tags-b">
+							<ul>
+								<li class="tag">
+									<a title="yoga"
+									   aria-label="yoga"
+									   href="#">
+										yoga
+									</a>
+								</li>
+								<li class="tag">
+									<a title="fitness"
+									   aria-label="fitness"
+									   href="#">
+										fitness
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</aside>
+					<header class="content">
+						<time class="date"
+						      datetime="2020-08-16T11:32:46+00:00">
+							Nov 16, 2020
+						</time>
+						<h2 class="h4">
+							<a title="Making a vegan meal for my boyfriend"
+							   aria-label="Making a vegan meal for my boyfriend"
+							   href="./viewBlog.html">
+								Making a vegan meal for my boyfriend
+							</a>
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio
+							dolorum
+							ducimus eos esse, facere facilis id labore maiores minima, optio quibusdam quos
+							repellat, saepe sed sint totam veritatis voluptatem.
+						</p>
+					</header>
+					<footer class="footer">
+						<a title="Read more"
+						   aria-label="Read more"
+						   href="./viewBlog.html">
+							Read more
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</footer>
+				</article>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<article class="card card-news card-news-c">
+					<aside class="aspect-rectangular hover hover-h full middle center">
+						<div class="hover-content">
+							<div class="overlay semi-transparent"></div>
+							<div class="hover-body">
+								<h3 class="h4-sm h4-xs mb0">
+									<a class="btn btn-color4-o"
+									   title="View more"
+									   aria-label="View more"
+									   href="./viewBlog.html">
+										<strong>
+											View more
+										</strong>
+									</a>
+								</h3>
+							</div>
+						</div>
+						<figure>
+							<picture>
+								<source srcset="./images/demo-news2.webp"
+								        type="image/webp">
+								<img 
+								     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+								     data-original="./images/demo-news2.jpg"
+								     title="More people want vegan food in cafe"
+								     alt="image description">
+							</picture>
+						</figure>
+						<nav class="tags tags-b">
+							<ul>
+								<li class="tag">
+									<a title="meditation"
+									   aria-label="meditation"
+									   href="#">
+										meditation
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</aside>
+					<header class="content">
+						<time class="date"
+						      datetime="2020-08-16T11:32:46+00:00">
+							Jan 01, 2020
+						</time>
+						<h2 class="h4">
+							<a title="More people want vegan food in cafe"
+							   aria-label="More people want vegan food in cafe"
+							   href="./viewBlog.html">
+								More people want vegan food in cafe
+							</a>
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio
+							dolorum
+							ducimus eos esse, facere facilis id labore maiores minima, optio quibusdam quos
+							repellat, saepe sed sint totam veritatis voluptatem.
+						</p>
+					</header>
+					<footer class="footer">
+						<a title="Read more"
+						   aria-label="Read more"
+						   href="./viewBlog.html">
+							Read more
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</footer>
+				</article>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<article class="card card-news card-news-c">
+					<aside class="aspect-rectangular hover hover-h full middle center">
+						<div class="hover-content">
+							<div class="overlay semi-transparent"></div>
+							<div class="hover-body">
+								<h3 class="h4-sm h4-xs mb0">
+									<a class="btn btn-color4-o"
+									   title="View more"
+									   aria-label="View more"
+									   href="./viewBlog.html">
+										<strong>
+											View more
+										</strong>
+									</a>
+								</h3>
+							</div>
+						</div>
+						<figure>
+							<picture>
+								<source srcset="./images/demo-news3.webp"
+								        type="image/webp">
+								<img 
+								     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+								     data-original="./images/demo-news3.jpg"
+								     title="Why do vegetarians live longer?"
+								     alt="image description">
+							</picture>
+						</figure>
+						<nav class="tags tags-b">
+							<ul>
+								<li class="tag">
+									<a title="eat"
+									   aria-label="eat"
+									   href="#">
+										eat
+									</a>
+								</li>
+								<li class="tag">
+									<a title="yoga"
+									   aria-label="yoga"
+									   href="#">
+										yoga
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</aside>
+					<header class="content">
+						<time class="date"
+						      datetime="2020-08-16T11:32:46+00:00">
+							Apr 26, 2020
+						</time>
+						<h2 class="h4">
+							<a title="Why do vegetarians live longer?"
+							   aria-label="Why do vegetarians live longer?"
+							   href="./viewBlog.html">
+								Why do vegetarians live longer?
+							</a>
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio
+							dolorum
+							ducimus eos esse, facere facilis id labore maiores minima, optio quibusdam quos
+							repellat, saepe sed sint totam veritatis voluptatem.
+						</p>
+					</header>
+					<footer class="footer">
+						<a title="Read more"
+						   aria-label="Read more"
+						   href="./viewBlog.html">
+							Read more
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</footer>
+				</article>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<article class="card card-news card-news-c">
+					<aside class="aspect-rectangular hover hover-h full middle center">
+						<div class="hover-content">
+							<div class="overlay semi-transparent"></div>
+							<div class="hover-body">
+								<h3 class="h4-sm h4-xs mb0">
+									<a class="btn btn-color4-o"
+									   title="View more"
+									   aria-label="View more"
+									   href="./viewBlog.html">
+										<strong>
+											View more
+										</strong>
+									</a>
+								</h3>
+							</div>
+						</div>
+						<figure>
+							<picture>
+								<source srcset="./images/demo-news4.webp"
+								        type="image/webp">
+								<img 
+								     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+								     data-original="./images/demo-news4.jpg"
+								     title="The health benefits of turmeric"
+								     alt="image description">
+							</picture>
+						</figure>
+						<nav class="tags tags-b">
+							<ul>
+								<li class="tag">
+									<a title="yoga"
+									   aria-label="yoga"
+									   href="#">
+										yoga
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</aside>
+					<header class="content">
+						<time class="date"
+						      datetime="2020-08-16T11:32:46+00:00">
+							May 11, 2020
+						</time>
+						<h2 class="h4">
+							<a title="The health benefits of turmeric"
+							   aria-label="The health benefits of turmeric"
+							   href="./viewBlog.html">
+								The health benefits of turmeric
+							</a>
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio
+							dolorum
+							ducimus eos esse, facere facilis id labore maiores minima, optio quibusdam quos
+							repellat, saepe sed sint totam veritatis voluptatem.
+						</p>
+					</header>
+					<footer class="footer">
+						<a title="Read more"
+						   aria-label="Read more"
+						   href="./viewBlog.html">
+							Read more
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</footer>
+				</article>
+			</div>
+			<aside class="col-sm-12 col-lg-12 mt20">
+				<a class="btn btn-primary-o btn-lg"
+				   title="More articles!"
+				   aria-label="More articles!"
+				   href="./indexBlog.html">
+					More articles!
+				</a>
+			</aside>
+		</section>
+	</div>
+</div>
+<!--/news-->
+<!--spacer-properties-->
+<div data-background-url="./images/parallax1.jpg"
+     data-fixed="true">
+	<div class="overlay semi-transparent"></div>
+	<div class="container fluid-md-less">
+		<div class="row">
+			<section class="feature feature-b center xl">
+				<article class="col-sm-4 col-md-4">
+					<aside class="icon">
+						<i class="fa fas fa-glass fa-5x"></i>
+					</aside>
+					<header class="content icon-boxes">
+						<p class="h2 big">
+							354+
+						</p>
+						<h2 class="h4 text-uppercase">
+							Recipes
+						</h2>
+					</header>
+				</article>
+				<article class="col-sm-4 col-md-4">
+					<aside class="icon">
+						<i class="fa fas fa-globe-americas fa-5x"></i>
+					</aside>
+					<header class="content icon-boxes">
+						<p class="h2 big">
+							456+
+						</p>
+						<h2 class="h4 text-uppercase">
+							Clients
+						</h2>
+					</header>
+				</article>
+				<article class="col-sm-4 col-md-4">
+					<aside class="icon">
+						<i class="fa fas fa-users fa-5x"></i>
+					</aside>
+					<header class="content icon-boxes">
+						<p class="h2 big">
+							125+
+						</p>
+						<h2 class="h4 text-uppercase">
+							Our team
+						</h2>
+					</header>
+				</article>
+			</section>
+		</div>
+	</div>
+</div>
+<!--/spacer-properties-->
+</main>
+<footer class="footer footer-d">
+    <div class="footer">
+        <div class="container fluid-md-less">
+            <section class="row">
+                <aside class="col-md-4">
+                    <a class="footer-brand"
+                       title="Go to home My Nutritionist"
+                       aria-label="Go to home My Nutritionist"
+                       href="./index.html">
+                        <figure>
+                            <picture>
+                                <source srcset="./images/logo-white.webp"
+                                        type="image/webp">
+                                <img class="img-responsive collapsed-brand"
+                                     src="./images/logo-white.png"
+                                     title="My Nutritionist white logo"
+                                     alt="My Nutritionist white logo">
+                            </picture>
+                        </figure>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores cumque
+                        dolores et eum, inventore ipsa ipsum quibusdam rerum, sed vel vero! Earum error
+                        fugit maxime molestiae ratione unde voluptates.
+                    </p>
+                    <!--social-->
+                    <ul class="social theme">
+                        <li>
+                            <a aria-label="Share on social network"
+                               title="Share on social network"
+                               href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Share on social network"
+                               title="Share on social network"
+                               href="#">
+                                <i class="fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Share on social network"
+                               title="Share on social network"
+                               href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--/social-->
+                </aside>
+                <article class="col-md-4">
+                    <header>
+                        <h2>
+                            Latest from <strong>blog</strong>
+                        </h2>
+                    </header>
+                    <article class="card card-news card-news-d">
+                        <aside class="aspect-rectangular hover-scale">
+                            <a title="image title"
+                               aria-label="image title"
+                               href="./viewBlog.html">
+                                <figure>
+                                    <picture>
+                                        <source srcset="./images/demo-news1.webp"
+                                                type="image/webp">
+                                        <img 
+                                             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                             data-original="./images/demo-news1.jpg"
+                                             title="image title"
+                                             alt="image description">
+                                    </picture>
+                                </figure>
+                            </a>
+                        </aside>
+                        <header class="content">
+                            <h2 class="h5">
+                                <a title="Lorem ipsum dolor sit amet, consectetur"
+                                   aria-label="Lorem ipsum dolor sit amet, consectetur"
+                                   href="./viewBlog.html">
+                                    <strong>Lorem ipsum dolor sit amet, consectetur.</strong>
+                                </a>
+                            </h2>
+                            <time class="date"
+                                  datetime="2020-08-16T11:32:46+00:00">
+                                Apr 26, 2020
+                            </time>
+                        </header>
+                    </article>
+                    <article class="card card-news card-news-d">
+                        <aside class="aspect-rectangular hover-scale">
+                            <a title="image title"
+                               aria-label="image title"
+                               href="./viewBlog.html">
+                                <figure>
+                                    <picture>
+                                        <source srcset="./images/demo-news2.webp"
+                                                type="image/webp">
+                                        <img 
+                                             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                             data-original="./images/demo-news2.jpg"
+                                             title="image title"
+                                             alt="image description">
+                                    </picture>
+                                </figure>
+                            </a>
+                        </aside>
+                        <header class="content">
+                            <h2 class="h5">
+                                <a title="Lorem ipsum dolor sit amet, consectetur"
+                                   aria-label="Lorem ipsum dolor sit amet, consectetur"
+                                   href="./viewBlog.html">
+                                    <strong>Lorem ipsum dolor sit amet, consectetur.</strong>
+                                </a>
+                            </h2>
+                            <time class="date"
+                                  datetime="2020-08-16T11:32:46+00:00">
+                                Apr 26, 2020
+                            </time>
+                        </header>
+                    </article>
+                    <article class="card card-news card-news-d">
+                        <aside class="aspect-rectangular hover-scale">
+                            <a title="image title"
+                               aria-label="image title"
+                               href="./viewBlog.html">
+                                <figure>
+                                    <picture>
+                                        <source srcset="./images/demo-news4.webp"
+                                                type="image/webp">
+                                        <img 
+                                             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                             data-original="./images/demo-news4.jpg"
+                                             title="image title"
+                                             alt="image description">
+                                    </picture>
+                                </figure>
+                            </a>
+                        </aside>
+                        <header class="content">
+                            <h2 class="h5">
+                                <a title="Lorem ipsum dolor sit amet, consectetur"
+                                   aria-label="Lorem ipsum dolor sit amet, consectetur"
+                                   href="./viewBlog.html">
+                                    <strong>Lorem ipsum dolor sit amet, consectetur.</strong>
+                                </a>
+                            </h2>
+                            <time class="date"
+                                  datetime="2020-08-16T11:32:46+00:00">
+                                Apr 26, 2020
+                            </time>
+                        </header>
+                    </article>
+                </article>
+                <article class="col-md-4">
+                    <header>
+                        <h2>
+                            Our <strong>data</strong>
+                        </h2>
+                    </header>
+                    <address>
+                        <div class="address">
+                            <p>
+                                <b>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Address
+                                </b>
+                                :
+                                La Marina ST. 35, Santa Cruz de Tenerife, Spain
+                            </p>
+                        </div>
+                        <div class="address">
+                            <p>
+                                <b>
+                                    <i class="fas fa-phone"></i>
+                                    Tel
+                                </b>
+                                :
+                                +34 922 985 058
+                            </p>
+                        </div>
+                        <div class="address">
+                            <p>
+                                <b>
+                                    <i class="fas fa-mobile"></i>
+                                    Cell
+                                </b>
+                                :
+                                +34 922 985 058
+                            </p>
+                        </div>
+                        <div class="address">
+                            <p>
+                                <b>
+                                    <i class="fas fa-fax"></i>
+                                    Fax
+                                </b>
+                                :
+                                +34 922 985 058
+                            </p>
+                        </div>
+                        <div class="address">
+                            <p>
+                                <b>
+                                    <i class="fas fa-envelope"></i>
+                                    Email
+                                </b>
+                                :
+                                <a title="Email"
+                                   aria-label="Email"
+                                   href="mailto: info@wepa.es">
+                                    info@wepa.es
+                                </a>
+                            </p>
+                        </div>
+                    </address>
+                    <header>
+                        <h2>
+                            Our <strong>newsletter</strong>
+                        </h2>
+                    </header>
+                    <div class="input-group">
+                        <label hidden
+                               for="subscribe"></label>
+                        <input type="email"
+                               class="form-control"
+                               placeholder="Our newsletter"
+                               id="subscribe">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary"
+                                    type="submit">Subscribe</button>
+                         </span>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+    <div class="sub-footer">
+        <div class="container fluid-md-less">
+            <section class="row">
+                <article class="col-md-6">
+                    <aside class="advice">
+                        
+                    </aside>
+                </article>
+                <article class="col-md-6">
+                    <header class="copyright">
+                        <p>
+                            My Nutritionist
+                            
+                        </p>
+                    </header>
+                </article>
+            </section>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

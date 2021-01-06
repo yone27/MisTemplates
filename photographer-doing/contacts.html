@@ -1,0 +1,202 @@
+<!--breadcrumb-->
+<div class="breadcrumb-container breadcrumb-c overlap"
+     data-background-url="./images/breadcrumb.jpg"
+     data-fixed="true">
+	<div class="overlay semi-transparent"></div>
+	<div class="content">
+		<section class="container fluid-md-less">
+			<article class="row">
+				<header class="col-md-12">
+					<h1 class="big">
+						Contact <strong>us</strong>
+					</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit
+						<br>
+						Asperiores atque, culpa cumque, exercitationem fuga harum.
+					</p>
+				</header>
+				<footer class="col-md-12">
+					<nav class="navbar-breadcrumb">
+						<ol class="breadcrumb-list">
+							<li class="breadcrumb-item">
+								<a title="Home"
+								   aria-label="Home"
+								   href="./index.html">
+									Home
+								</a>
+							</li>
+							<li class="breadcrumb-item active">
+								About us
+							</li>
+						</ol>
+					</nav>
+				</footer>
+			</article>
+		</section>
+	</div>
+</div>
+<!--breadcrumb-->
+<!--contact-->
+<div class="section contact contact-d">
+	<div class="container fluid-md-less">
+		<div class="row">
+			<div class="col-sm-6 col-md-5">
+				<div class="feature feature-f transparent xl center-sm center-xs">
+					<section class="row">
+						<article class="col-md-12">
+							<aside class="icon rounded">
+								<i class="fa fas fa-phone fa-5x"></i>
+							</aside>
+							<header class="content">
+								<h2 class="title h3">
+									Call the <strong>office</strong>
+								</h2>
+								<p>
+									(+54) 2547-65-58
+								</p>
+								<p>
+									(+54) 2547-65-58
+								</p>
+							</header>
+						</article>
+						<article class="col-md-12">
+							<aside class="icon">
+								<i class="fa fa-university fa-5x"></i>
+							</aside>
+							<header class="content">
+								<h2 class="title h3">
+									Office <strong>location</strong>
+								</h2>
+								<p>
+									La Marina ST. 35, Santa Cruz de Tenerife, Spain
+								</p>
+							</header>
+						</article>
+						<article class="col-md-12">
+							<aside class="icon">
+								<i class="fa fas fa-envelope fa-5x"></i>
+							</aside>
+							<header class="content">
+								<h2 class="title h3">
+									Email <strong>us</strong>
+								</h2>
+								<p>
+									wepa@mail.com
+								</p>
+							</header>
+						</article>
+					</section>
+				</div>
+			</div>
+			<section class="col-sm-5 col-md-7 col-sm-offset-1 col-md-offset-0">
+				<article class="forms forms-b labeled">
+					<header>
+						<h1 class="ll big">
+							Send a <strong>message</strong>
+						</h1>
+					</header>
+					<aside class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<input type="text"
+								       id="indexform-name"
+								       class="form-control"
+								       name="IndexFormName"
+								       placeholder="Enter your name"
+								       aria-required="true">
+								<label class="control-label"
+								       hidden
+								       for="indexform-name">
+									Enter your name
+								</label>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<input type="text"
+								       id="indexform-email"
+								       class="form-control"
+								       name="IndexFormEmail"
+								       placeholder="Enter your email"
+								       aria-required="true">
+								<label class="control-label"
+								       hidden
+								       for="indexform-email">
+									Enter your email
+								</label>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<input type="Number"
+								       id="indexform-phone"
+								       class="form-control"
+								       name="IndexFormPhone"
+								       placeholder="Enter your phone"
+								       aria-required="true">
+								<label class="control-label"
+								       hidden
+								       for="indexform-phone">
+									Enter your phone
+								</label>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea id="message"
+								          class="form-control"
+								          name="IndexFormMessage"
+								          maxlength="250"
+								          rows="3"
+								          placeholder="What are your questions?"
+								          aria-required="true"></textarea>
+								<label class="control-label"
+								       hidden
+								       for="message">
+									What are your questions?
+								</label>
+							</div>
+						</div>
+						<div class="col-md-12 text-right">
+							<a class="btn btn-primary btn-lg btn-block-sm btn-block-xs btn-rounded"
+							   title="Send"
+							   alt="Send"
+							   href="#">
+								Send
+							</a>
+						</div>
+					</aside>
+				</article>
+			</section>
+		</div>
+	</div>
+</div>
+<!--/contact-->
+<!--map-->
+<section class="section overlap">
+	<aside>
+		<!--map-->
+		 if($googleMapsWidget = WidgetsLauncher::begin([
+			'frontend\modules\wSystem\widgets\GoogleMapsWidget' => [
+				'key'     => 'AIzaSyAjt7FT-aeBO24Up9Nf_ahtfWz-S57CMgo',
+				'markers' => [
+					[
+						'title' => 'MyPhotographer',
+						'lat'   => '28.4699',
+						'lng'   => '-16.2479',
+						'info'  => '<h4>MyPhotographer</h4><p>' . Yii::t('photographer', 'La Marina ST. 35, <br> Santa Cruz de Tenerife, Spain') . '</p>',
+					],
+				],
+				'height'  => 'h700 h500-sm h500-xs',
+				'style'   => 'dark',
+			],
+		])) : 
+			<!--google-map-->
+			<?= $googleMapsWidget->run() 
+			<!--/google-map-->
+		 endif; 
+		<!--/map-->
+	</aside>
+</section>
+<!--/map-->
