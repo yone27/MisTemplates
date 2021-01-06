@@ -1,0 +1,26 @@
+/* body > header .navbar {
+    background-color: #fff;
+}
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+body > header .navbar li.dropdown::after {
+    content: '';
+}
+.buttons-legals i {
+    color: #576373;
+}
+
+body > header .navbar li.dropdown > a {
+    padding-right: 15px !important;
+}
+
+.d-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.top-menu {
+    background-color: #35a698 !important;
+    color: white !important;
+} */

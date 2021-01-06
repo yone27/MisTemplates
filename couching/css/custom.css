@@ -1,0 +1,26 @@
+body > header .navbar {
+    background-color: #fff;
+}
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+body > header .navbar li.dropdown::after {
+    content: '';
+}
+.buttons-legals i {
+    color: #576373;
+}
+body.transparent > header .navbar {
+    background-color: rgba(0,0,0,0.6);
+}
+body > header .navbar li.dropdown > a {
+    padding-right: 15px !important;
+}
+body > header.menu-b .navbar .navbar-nav li.dropdown:hover > a {
+    color: #333;
+}
+
+body:not(.transparent) .top-menu{
+    background-color: #333;
+    color: white;
+}
